@@ -1,55 +1,55 @@
 import React from "react";
 import { BsThreeDots } from "react-icons/bs";
-import expenseLogo1 from "../assets/expenseLogo1.png";
-import expenseLogo2 from "../assets/expenseLogo2.png";
-import expenseLogo3 from "../assets/expenseLogo3.png";
-import expenseLogo4 from "../assets/expenseLogo4.png";
-import expenseLogo5 from "../assets/expenseLogo5.png";
-import expenseLogo6 from "../assets/expenseLogo6.png";
-import expenseLogo7 from "../assets/expenseLogo7.png";
+import expenseLogo1 from "../assets/logo1.jpg";
+import expenseLogo2 from "../assets/logo2.jpg";
+import expenseLogo3 from "../assets/logo3.jpg";
+import expenseLogo4 from "../assets/logo4.jpg";
+import expenseLogo5 from "../assets/logo5.jpg";
+import expenseLogo6 from "../assets/logo6.jpg";
+import expenseLogo7 from "../assets/logo7.jpg";
 
 export default function Expenses() {
   const data = [
     {
       logo: expenseLogo1,
-      name: "Amazon",
-      price: "-$5K",
+      name: "Olivia",
+      price: "95%",
     },
     {
       logo: expenseLogo2,
-      name: "Spotify",
-      price: "-$50",
+      name: "Mark Wood",
+      price: "85%",
     },
     {
       logo: expenseLogo3,
-      name: "Netflix",
-      price: "-$200",
+      name: "Michael",
+      price: "80%",
     },
     {
       logo: expenseLogo4,
-      name: "Adobe",
-      price: "-$20K",
+      name: "Dwight",
+      price: "80%",
     },
     {
       logo: expenseLogo5,
-      name: "Apple",
-      price: "-$30K",
+      name: "Charles",
+      price: "70%",
     },
     {
       logo: expenseLogo6,
-      name: "Airbnb",
-      price: "-$7K",
+      name: "Albert",
+      price: "69%",
     },
     {
       logo: expenseLogo7,
-      name: "Google",
-      price: "-$70",
+      name: "George",
+      price: "62%",
     },
   ];
   return (
     <div className="expenses">
       <div className="expenses__info">
-        <h4>Expenses</h4>
+        <h4>Top Performance Employees</h4>
         <BsThreeDots />
       </div>
       <div className="expenses__container">

@@ -5,34 +5,34 @@ import { BsThreeDots } from "react-icons/bs";
 export default function ActivityLog() {
   const data = [
     {
-      day: "Sun",
-      date: "6/9 7:11pm",
-      name: "Adobe Creative Suit Monthly Plan",
-      status: "Paid",
+      day: "Today",
+      date: "7:11am",
+      name: "Interviews",
+      status: "Done",
     },
     {
-      day: "Fri",
-      date: "6/7 1:11am",
-      name: "Amazon Premium Card",
-      status: "Paid",
+      day: "Today",
+      date: "1:11pm",
+      name: "Feedback Session",
+      status: "Pending",
     },
     {
-      day: "Mon",
-      date: "6/3 3:07pm",
-      name: "Sent Payment to Cleint X",
-      status: "Paid",
+      day: "Tomorrow",
+      date: "12:00pm",
+      name: "Performance Review",
+      status: "Pending",
     },
     {
-      day: "Thu",
-      date: "5/30 3:00pm",
-      name: "Changed Password",
-      status: "Account",
+      day: "Tomorrow",
+      date: "3:00pm",
+      name: "Onboarding and Workshops",
+      status: "Pending",
     },
   ];
   return (
     <div className="activity">
       <div className="activity__info">
-        <h4>Wallets</h4>
+        <h4>Schedule</h4>
         <BsThreeDots />
       </div>
       <div className="activity__container">

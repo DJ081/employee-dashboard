@@ -3,32 +3,39 @@ import { AreaChart, Area, Tooltip, ResponsiveContainer } from "recharts";
 
 const data = [
   {
-    data2: 2000,
-    data1: 2400,
+    "On Time": 2000,
+    "Absent": 2400,
+    "Late In": 3000,
   },
   {
-    data2: 4000,
-    data1: 1398,
+    "On Time": 4200,
+    "Absent": 1398,
+    "Late In": 7000,
   },
   {
-    data2: 5000,
-    data1: 12800,
+    "On Time": 2000,
+    "Absent": 12800,
+    "Late In": 3500,
   },
   {
-    data2: 8780,
-    data1: 3908,
+    "On Time": 3000,
+    "Absent": 3908,
+    "Late In": 6500,
   },
   {
-    data2: 9890,
-    data1: 4800,
+    "On Time": 2800,
+    "Absent": 4800,
+    "Late In": 3800,
   },
   {
-    data2: 11390,
-    data1: 3800,
+    "On Time": 2000,
+    "Absent": 3800,
+    "Late In": 7500,
   },
   {
-    data2: 3490,
-    data1: 4300,
+    "On Time": 3490,
+    "Absent": 4300,
+    "Late In": 3700,
   },
 ];
 
@@ -36,22 +43,27 @@ export default function Transactions() {
   return (
     <div className="transactions">
       <div className="transactions__info">
-        <h3>Transactions</h3>
+        <h3>Attendance Overview</h3>
         <div className="transactions__info__detailed">
           <div>
-            <h5>You Bought :</h5>
-            <h4>$140,734.01</h4>
+            <span class="dot-1"></span>
+            <h4>Absent</h4>
           </div>
           <div>
-            <h5>You Sold : </h5>
-            <h4>$347,735,011.14</h4>
+            <span class="dot-2"></span>
+            <h4>Late In</h4>
+          </div>
+          <div>
+            <span class="dot-3"></span>
+            <h4>On Time</h4>
           </div>
         </div>
       </div>
       <div className="transactions__details">
         <div>
-          <h4>Statistics</h4>
-          <h4>Up by 50%</h4>
+          <button class="year-button">
+            <span>2023</span>
+          </button>
         </div>
         <div>
           <button>Year</button>
@@ -69,23 +81,37 @@ export default function Transactions() {
             }}
           >
             <defs>
-              <linearGradient id="colorview" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="30%" stopColor="#ff4d6d" stopOpacity={0.4} />
-                <stop offset="85%" stopColor="#ff4d6d11" stopOpacity={0.2} />
+              <linearGradient id="colorview2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="20%" stopColor="#f1c232" stopOpacity={0.4} />
+                <stop offset="85%" stopColor="#f1c232" stopOpacity={0.2} />
+              </linearGradient>
+              <linearGradient id="colorview1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="30%" stopColor="#c70f0f" stopOpacity={0.4} />
+                <stop offset="85%" stopColor="#c70f0f" stopOpacity={0.2} />
+              </linearGradient>
+              <linearGradient id="colorview3" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="100%" stopColor="#008000" stopOpacity={0.4} />
+                <stop offset="100%" stopColor="#008000" stopOpacity={0.2} />
               </linearGradient>
             </defs>
             <Tooltip cursor={false} />
             <Area
               type="monotone"
-              dataKey="data2"
-              stroke="#ee3b3b"
-              fill="url(#colorview)"
+              dataKey="On Time"
+              stroke="#008000"
+              fill="url(#colorview3)"
             />
             <Area
               type="monotone"
-              dataKey="data1"
-              stroke="#ee3b3b"
-              fill="url(#colorview)"
+              dataKey="Absent"
+              stroke="#c70f0f"
+              fill="url(#colorview1)"
+            />
+            <Area
+              type="monotone"
+              dataKey="Late In"
+              stroke="#f1c232"
+              fill="url(#colorview2)"
             />
           </AreaChart>
         </ResponsiveContainer>

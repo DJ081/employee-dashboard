@@ -13,8 +13,8 @@ export default function DashboardApp() {
       <div className="app__grid">
         <div className="app__grid__1">
           <Wallets />
-          <Expenses />
           <Transactions />
+          <Expenses />
         </div>
         <div className="app__grid__2">
           <Overview />

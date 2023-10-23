@@ -7,11 +7,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
     h2 {
       font-weight: 900;
       letter-spacing: 0.3vw;
       span {
-        color: #c70f61;
+        color: #c70f0f;
         font-weight: 900;
       }
     }
@@ -24,18 +25,18 @@
       margin-top: 2rem;
       &:nth-of-type(1) {
         a {
-          color: #c70f61;
+          color: #c70f0f;
         }
       }
       a {
         color: white;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         text-decoration: none;
         display: flex;
         gap: 0.7rem;
         transition: 0.5s ease-in-out;
         &:hover {
-          color: #c70f61;
+          color: #c70f0f;
         }
       }
     }

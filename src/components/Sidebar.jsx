@@ -12,29 +12,29 @@ export default function Sidebar() {
       icon: SiGoogleanalytics,
     },
     {
-      title: "Buy / Sell",
+      title: "Employees",
       icon: AiFillAppstore,
     },
     {
-      title: "News",
-      icon: BiNews,
+      title: "Projects",
+      icon: BiRocket,
     },
 
     {
-      title: "Send Money",
-      icon: BiRocket,
+      title: "Tickets",
+      icon: BiNews,
     },
     {
-      title: "Deposit",
+      title: "Attendance",
       icon: BsCashStack,
     },
 
     {
-      title: "Transactions",
+      title: "Payroll",
       icon: FaWallet,
     },
     {
-      title: "Account",
+      title: "Leaves",
       icon: MdAccountCircle,
     },
     {
@@ -46,7 +46,7 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="brand">
         <h2>
-          FIN<span>CHECK</span>
+          <span>airtel</span>
         </h2>
       </div>
       <ul className="links">

@@ -8,23 +8,27 @@
     gap: 0.8vw;
     img {
       height: 8vh;
+      width: 8vh;
+      object-fit: cover;
       border-radius: 2rem;
     }
     .info {
       .status {
-        color: #80b918;
+        color: #c70f0f;
+        font-size: 0.8rem;
       }
     }
   }
   .quick {
-    button {
-      border-radius: 2vw;
-      padding: 2vh 6vw;
+    div {
+      // border-radius: 2vw;
+      padding: 1vh 1vw;
+      margin-top: 10px;
       display: flex;
       gap: 1vw;
       background-color: transparent;
       color: white;
-      border: 2px solid white;
+      // border: 2px solid white;
       cursor: pointer;
       font-weight: 900;
       transition: 0.4s ease-in-out;
@@ -32,11 +36,13 @@
         font-size: larger;
       }
       &:hover {
-        background-color: #c70f61;
+        // background-color: #c70f0f;
         color: white;
       }
     }
   }
+   
+
   .navbar__info {
     display: flex;
     align-items: center;
@@ -59,7 +65,7 @@
         }
       }
       svg {
-        color: #c70f61;
+        color: #be0e0e;
       }
     }
   }

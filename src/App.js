@@ -8,9 +8,9 @@ function App() {
         <Sidebar />
         <DashboardApp />
       </div>
-      <div className="shapes__one"></div>
+      {/* <div className="shapes__one"></div>
       <div className="shapes__two"></div>
-      <div className="shapes__three"></div>
+      <div className="shapes__three"></div> */}
     </>
   );
 }
